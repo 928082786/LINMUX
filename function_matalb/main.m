@@ -1,0 +1,11 @@
+a=load('C:\\Users\\XT\\Desktop\\2.csv');
+num_a=check(a);
+p=make_line(a,num_a);
+x=miedian(p);
+% num_b=check(b);
+% diatance_draw(b,x,y,num_b);
+% diatance_draw(a,x,y,num_a);
+hold on;
+plot(x,'v');
+out_vector=output(p);
+xlswrite('C:\\Users\XT\\Desktop\\p.xls',[out_vector;x]);
